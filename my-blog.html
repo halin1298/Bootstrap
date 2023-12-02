@@ -1,109 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="my-blog.css">
-</head>
-<div>
-    <div class="container">
-        <h1 class="helloWorld text-primary text-opacity-25">Hello world</h1>
-        <h1 class="display-1 bg-danger">Display 1</h1>
-        <button class="btn">btn</button>
-        <button class = 'btn btn-primary'>primary btn <span class="badge text-bg-info rounded-pill">19</span></button>
-        <button class = 'btn btn-secondary'>secondary btn</button>
-        <button class = 'btn btn-warning position-relative'>warning btn <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">9</span></button>
-        <button class = 'btn btn-outline-danger'>danger btn</button>
-        <button class = 'btn btn-primary btn-lg'>large primary btn</button>
-        <button class = 'btn btn-info btn-sm'>small info btn</button>
-        <button class = 'btn btn-primary' disabled>disabled primary btn</button>
-        <button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
-        <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
-        <p class="d-inline-flex gap-1">
-            <button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
-            <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
-            <button type="button" class="btn" disabled data-bs-toggle="button">Disabled toggle button</button>
-          </p>
-          <p class="d-inline-flex gap-1">
-            <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
-            <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
-            <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle button</button>
-          </p>
-        <div class="alert alert-info alert-dismissible fade show">
-            alert
-            <button class="btn-close"  data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-        <p class="lead text-danger">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quae, tenetur deserunt suscipit eveniet maxime laboriosam aliquid dolorem corrupti aliquam hic optio nulla iste? Hic voluptate soluta ullam molestias iure.
-        Amet odio nesciunt officia reprehenderit cumque repellendus, quasi laboriosam quia. Dicta neque laboriosam, placeat, eos reprehenderit accusantium illo repellat earum nostrum ullam nihil ex quis non aperiam temporibus modi sapiente?
-        Nam cum accusamus voluptates, sint animi, nesciunt assumenda fugiat porro magni accusantium eum. Aliquam nihil temporibus, odit pariatur a repellat, eveniet enim odio nemo ipsam voluptatum ex soluta dolorem ea.
-        Omnis vitae quasi architecto numquam incidunt minus deleniti repudiandae quod quas placeat deserunt, tempora nisi officiis asperiores! Perferendis nesciunt aliquid, explicabo iure minus consectetur reprehenderit minima obcaecati laborum eligendi fugiat?
-        Impedit temporibus maxime corporis necessitatibus eum ullam fuga, aperiam itaque assumenda enim magni ipsam neque nam fugiat pariatur id sint consequatur ad eaque. Rem, adipisci. Fugit deserunt ea porro sit!
-        Neque deleniti dolorum temporibus atque exercitationem error debitis facilis earum minus. Odio soluta aperiam alias facilis dolorum. Ex laudantium explicabo assumenda modi. Iusto, iste fugiat. Voluptatibus illum qui minus blanditiis!</p>
-        <figcaption class="blockquote-footer">
-            somebody
-        </figcaption>
-        <div class="d-grid gap-2">
-            <button class="btn btn-danger">btn</button>
-            <button class="btn btn-info">btn</button>
-        </div>
-        <div class ="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-warning">btn</button>
-            <button class="btn btn-secondary">btn</button>
-        </div>
-        <div class="btn-group" role="group" aria-label="Basic example">
-            <button class="btn btn-success">one</button>
-            <button class="btn btn-success">two</button>
-            <button class="btn btn-success">three</button>
-        </div>
-    </div>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-3 col-sm-6 bg-primary">
-                column
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="my-blog.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary navbar-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </div>
+                <form class="d-flex" action="s">
+                  <input type="search" name="a" id="" class="form-control me-2">
+                  <button class="btn btn-outline-light">Search</button>
+                </form>
+              </div>
             </div>
-            <div class="col-lg-3 bg-info col-sm-6 ">col</div>
-            <div class="col-lg-3 bg-danger col-sm-6">col</div>
-            <div class="col-lg-3 bg-warning col-sm-6">col</div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6"><img class="img-fluid"src="https://media.istockphoto.com/id/928882610/photo/group-of-wild-geese-in-sunset.jpg?s=1024x1024&w=is&k=20&c=6dLFZOke3RudDxMMZ3S4KO2JdE4kXDCsyIsrlFj_K7E=" alt="bird"></div>
-            <div class="col-lg-6"><img class="img-fluid"src="https://media.istockphoto.com/id/1258120232/photo/greater-flamingos-are-famous-pink-birds-can-be-found-in-warm-watery-regions-on-many-continents.jpg?s=1024x1024&w=is&k=20&c=DsoHMVr5lgCdc7Ilga_E94_PlDLPE-WSofXxUchpOSE=" alt="bird2"></div>
-        </div>
-    </div>
-    <div class="d-flex justify-content-around">
-        <div class="bg-info">a</div>
-        <div class="bg-warning">b</div>
-        <div class="bg-danger">c</div>
-    </div>
-    <div class="d-flex align-items-center">
-        <div class="bg-primary col">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur delectus dolorum et maiores soluta alias minima quaerat nesciunt reiciendis, incidunt, earum nobis, explicabo officia perferendis veniam! Ab obcaecati maxime rem!</div>
-        <div class="bg-info col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fuga voluptatem temporibus, quaerat et sapiente neque delectus inventore vero aperiam deleniti eos distinctio debitis adipisci ex fugiat. Eius, ad quod?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum repudiandae tempore at deserunt quam ullam vel voluptatem, nostrum dolorum, iste corrupti. Suscipit aliquid iusto unde nihil quod earum, libero nemo.</div>
-        <div class="bg-success col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis cumque totam consequatur harum ipsam! Numquam magni ut quaerat a sequi, nobis ab quasi mollitia magnam non praesentium, perspiciatis, culpa expedita!</div>
-    </div>
-    <form action="1">
-        <div class="input-group mb-3 ">
-            <label for="email" class="col-form-label col-sm-2">Email</label>
-            <input type="email" id="email" class="form-control" placeholder="name@example.com">
-        </div>
-        <div class="input-group mb-3">
-            <label for="password" class="col-form-label col-sm-2">Password</label>
-            <input type="password" id="password" class="form-control">
-        </div>
-        <div class="input-group">
-            <select id="select" class="form-select">
-                <option selected>State</option>
-                <option value="1">Alabama</option>
-                <option value="2">Alaska</option>
-                <option value="3">Nebraska</option>
-            </select>
-        </div>
-        <input type="submit" name="" id="" class="btn btn-primary mt-3 ">
-    </form>
-    <script src="my-blog.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+          </nav>
+        <div>
+            <div class="container">
+                <h1 class="helloWorld text-primary text-opacity-25">Hello world</h1>
+                <h1 class="display-1 bg-danger">Display 1</h1>
+                <button class="btn">btn</button>
+                <button class = 'btn btn-primary'>primary btn <span class="badge text-bg-info rounded-pill">19</span></button>
+                <button class = 'btn btn-secondary'>secondary btn</button>
+                <button class = 'btn btn-warning position-relative'>warning btn <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">9</span></button>
+                <button class = 'btn btn-outline-danger'>danger btn</button>
+                <button class = 'btn btn-primary btn-lg'>large primary btn</button>
+                <button class = 'btn btn-info btn-sm'>small info btn</button>
+                <button class = 'btn btn-primary' disabled>disabled primary btn</button>
+                <button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
+                <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
+                <p class="d-inline-flex gap-1">
+                    <button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
+                    <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
+                    <button type="button" class="btn" disabled data-bs-toggle="button">Disabled toggle button</button>
+                </p>
+                <p class="d-inline-flex gap-1">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
+                    <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
+                    <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle button</button>
+                </p>
+                <div class="alert alert-info alert-dismissible fade show">
+                    alert
+                    <button class="btn-close"  data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <p class="lead text-danger">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quae, tenetur deserunt suscipit eveniet maxime laboriosam aliquid dolorem corrupti aliquam hic optio nulla iste? Hic voluptate soluta ullam molestias iure.
+                Amet odio nesciunt officia reprehenderit cumque repellendus, quasi laboriosam quia. Dicta neque laboriosam, placeat, eos reprehenderit accusantium illo repellat earum nostrum ullam nihil ex quis non aperiam temporibus modi sapiente?
+                Nam cum accusamus voluptates, sint animi, nesciunt assumenda fugiat porro magni accusantium eum. Aliquam nihil temporibus, odit pariatur a repellat, eveniet enim odio nemo ipsam voluptatum ex soluta dolorem ea.
+                Omnis vitae quasi architecto numquam incidunt minus deleniti repudiandae quod quas placeat deserunt, tempora nisi officiis asperiores! Perferendis nesciunt aliquid, explicabo iure minus consectetur reprehenderit minima obcaecati laborum eligendi fugiat?
+                Impedit temporibus maxime corporis necessitatibus eum ullam fuga, aperiam itaque assumenda enim magni ipsam neque nam fugiat pariatur id sint consequatur ad eaque. Rem, adipisci. Fugit deserunt ea porro sit!
+                Neque deleniti dolorum temporibus atque exercitationem error debitis facilis earum minus. Odio soluta aperiam alias facilis dolorum. Ex laudantium explicabo assumenda modi. Iusto, iste fugiat. Voluptatibus illum qui minus blanditiis!</p>
+                <figcaption class="blockquote-footer">
+                    somebody
+                </figcaption>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-danger">btn</button>
+                    <button class="btn btn-info">btn</button>
+                </div>
+                <div class ="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-warning">btn</button>
+                    <button class="btn btn-secondary">btn</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button class="btn btn-success">one</button>
+                    <button class="btn btn-success">two</button>
+                    <button class="btn btn-success">three</button>
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 bg-primary">
+                        column
+                    </div>
+                    <div class="col-lg-3 bg-info col-sm-6 ">col</div>
+                    <div class="col-lg-3 bg-danger col-sm-6">col</div>
+                    <div class="col-lg-3 bg-warning col-sm-6">col</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6"><img class="img-fluid"src="https://media.istockphoto.com/id/928882610/photo/group-of-wild-geese-in-sunset.jpg?s=1024x1024&w=is&k=20&c=6dLFZOke3RudDxMMZ3S4KO2JdE4kXDCsyIsrlFj_K7E=" alt="bird"></div>
+                    <div class="col-lg-6"><img class="img-fluid"src="https://media.istockphoto.com/id/1258120232/photo/greater-flamingos-are-famous-pink-birds-can-be-found-in-warm-watery-regions-on-many-continents.jpg?s=1024x1024&w=is&k=20&c=DsoHMVr5lgCdc7Ilga_E94_PlDLPE-WSofXxUchpOSE=" alt="bird2"></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-around">
+                <div class="bg-info">a</div>
+                <div class="bg-warning">b</div>
+                <div class="bg-danger">c</div>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="bg-primary col">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur delectus dolorum et maiores soluta alias minima quaerat nesciunt reiciendis, incidunt, earum nobis, explicabo officia perferendis veniam! Ab obcaecati maxime rem!</div>
+                <div class="bg-info col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fuga voluptatem temporibus, quaerat et sapiente neque delectus inventore vero aperiam deleniti eos distinctio debitis adipisci ex fugiat. Eius, ad quod?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum repudiandae tempore at deserunt quam ullam vel voluptatem, nostrum dolorum, iste corrupti. Suscipit aliquid iusto unde nihil quod earum, libero nemo.</div>
+                <div class="bg-success col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis cumque totam consequatur harum ipsam! Numquam magni ut quaerat a sequi, nobis ab quasi mollitia magnam non praesentium, perspiciatis, culpa expedita!</div>
+            </div>
+            <form action="1">
+                <div class="input-group mb-3 ">
+                    <label for="email" class="col-form-label col-sm-2">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="name@example.com">
+                </div>
+                <div class="input-group mb-3">
+                    <label for="password" class="col-form-label col-sm-2">Password</label>
+                    <input type="password" id="password" class="form-control">
+                </div>
+                <div class="input-group">
+                    <select id="select" class="form-select">
+                        <option selected>State</option>
+                        <option value="1">Alabama</option>
+                        <option value="2">Alaska</option>
+                        <option value="3">Nebraska</option>
+                    </select>
+                </div>
+                <input type="submit" name="" id="" class="btn btn-primary mt-3 ">
+            </form>
+        <script src="my-blog.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    </body>
 </html>
