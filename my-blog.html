@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="my-blog.css">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary navbar-dark fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#">Navbar  <i class="fa-regular fa-bell"></i></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -22,65 +23,68 @@
                   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                 </div>
                 <form class="d-flex" action="s">
-                  <input type="search" name="a" id="" class="form-control me-2">
-                  <button class="btn btn-outline-light">Search</button>
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+                    <input type="search" name="a" id="" class="form-control me-2" >
+                    <button class="btn btn-outline-light"> Search</button>
                 </form>
               </div>
             </div>
-          </nav>
-        <div>
-            <div class="container">
-                <h1 class="helloWorld text-primary text-opacity-25">Hello world</h1>
-                <h1 class="display-1 bg-danger">Display 1</h1>
-                <button class="btn">btn</button>
-                <button class = 'btn btn-primary'>primary btn <span class="badge text-bg-info rounded-pill">19</span></button>
-                <button class = 'btn btn-secondary'>secondary btn</button>
-                <button class = 'btn btn-warning position-relative'>warning btn <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">9</span></button>
-                <button class = 'btn btn-outline-danger'>danger btn</button>
-                <button class = 'btn btn-primary btn-lg'>large primary btn</button>
-                <button class = 'btn btn-info btn-sm'>small info btn</button>
-                <button class = 'btn btn-primary' disabled>disabled primary btn</button>
+        </nav>
+        <div class="container">
+            <h1 class="helloWorld text-primary text-opacity-25">Hello world</h1>
+            <h1 class="display-1 bg-danger w-100">Display 1 <i class="fa-solid fa-magnifying-glass"></i><i class="bi bi-balloon-fill"></i></h1>
+            <button class="btn">btn</button>
+            <button class = 'btn btn-primary'>primary btn <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-balloon-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8.48 10.901C11.211 10.227 13 7.837 13 5A5 5 0 0 0 3 5c0 2.837 1.789 5.227 4.52 5.901l-.244.487a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.244-.487ZM4.352 3.356a4.004 4.004 0 0 1 3.15-2.325C7.774.997 8 1.224 8 1.5c0 .276-.226.496-.498.542-.95.162-1.749.78-2.173 1.617a.595.595 0 0 1-.52.341c-.346 0-.599-.329-.457-.644Z"/>
+            </svg><span class="badge text-bg-info rounded-pill">19</span></button>
+            <button class = 'btn btn-secondary'>secondary btn <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div></button>
+            <button class = 'btn btn-warning position-relative'>warning btn <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">9</span></button>
+            <button class = 'btn btn-outline-danger'>danger btn</button>
+            <button class = 'btn btn-primary btn-lg'>large primary btn</button>
+            <button class = 'btn btn-info btn-sm'>small info btn</button>
+            <button class = 'btn btn-primary' disabled>disabled primary btn</button>
+            <button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
+            <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
+            <p class="d-inline-flex gap-1">
                 <button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
                 <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
-                <p class="d-inline-flex gap-1">
-                    <button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
-                    <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
-                    <button type="button" class="btn" disabled data-bs-toggle="button">Disabled toggle button</button>
-                </p>
-                <p class="d-inline-flex gap-1">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
-                    <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
-                    <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle button</button>
-                </p>
-                <div class="alert alert-info alert-dismissible fade show">
-                    alert
-                    <button class="btn-close"  data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-                <p class="lead text-danger">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quae, tenetur deserunt suscipit eveniet maxime laboriosam aliquid dolorem corrupti aliquam hic optio nulla iste? Hic voluptate soluta ullam molestias iure.
-                Amet odio nesciunt officia reprehenderit cumque repellendus, quasi laboriosam quia. Dicta neque laboriosam, placeat, eos reprehenderit accusantium illo repellat earum nostrum ullam nihil ex quis non aperiam temporibus modi sapiente?
-                Nam cum accusamus voluptates, sint animi, nesciunt assumenda fugiat porro magni accusantium eum. Aliquam nihil temporibus, odit pariatur a repellat, eveniet enim odio nemo ipsam voluptatum ex soluta dolorem ea.
-                Omnis vitae quasi architecto numquam incidunt minus deleniti repudiandae quod quas placeat deserunt, tempora nisi officiis asperiores! Perferendis nesciunt aliquid, explicabo iure minus consectetur reprehenderit minima obcaecati laborum eligendi fugiat?
-                Impedit temporibus maxime corporis necessitatibus eum ullam fuga, aperiam itaque assumenda enim magni ipsam neque nam fugiat pariatur id sint consequatur ad eaque. Rem, adipisci. Fugit deserunt ea porro sit!
-                Neque deleniti dolorum temporibus atque exercitationem error debitis facilis earum minus. Odio soluta aperiam alias facilis dolorum. Ex laudantium explicabo assumenda modi. Iusto, iste fugiat. Voluptatibus illum qui minus blanditiis!</p>
-                <figcaption class="blockquote-footer">
-                    somebody
-                </figcaption>
-                <div class="d-grid gap-2">
-                    <button class="btn btn-danger">btn</button>
-                    <button class="btn btn-info">btn</button>
-                </div>
-                <div class ="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn btn-warning">btn</button>
-                    <button class="btn btn-secondary">btn</button>
-                </div>
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <button class="btn btn-success">one</button>
-                    <button class="btn btn-success">two</button>
-                    <button class="btn btn-success">three</button>
-                </div>
+                <button type="button" class="btn" disabled data-bs-toggle="button">Disabled toggle button</button>
+            </p>
+            <p class="d-inline-flex gap-1">
+                <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
+                <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active toggle button</button>
+                <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle button</button>
+            </p>
+            <div class="alert alert-info alert-dismissible fade show">
+                alert
+                <button class="btn-close"  data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <div class="container text-center">
-                <div class="row">
+            <p class="lead text-danger border border-primary rounded shadow my-5 p-3 w-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quae, tenetur deserunt suscipit eveniet maxime laboriosam aliquid dolorem corrupti aliquam hic optio nulla iste? Hic voluptate soluta ullam molestias iure.
+            Amet odio nesciunt officia reprehenderit cumque repellendus, quasi laboriosam quia. Dicta neque laboriosam, placeat, eos reprehenderit accusantium illo repellat earum nostrum ullam nihil ex quis non aperiam temporibus modi sapiente?
+            Nam cum accusamus voluptates, sint animi, nesciunt assumenda fugiat porro magni accusantium eum. Aliquam nihil temporibus, odit pariatur a repellat, eveniet enim odio nemo ipsam voluptatum ex soluta dolorem ea.
+            Omnis vitae quasi architecto numquam incidunt minus deleniti repudiandae quod quas placeat deserunt, tempora nisi officiis asperiores! Perferendis nesciunt aliquid, explicabo iure minus consectetur reprehenderit minima obcaecati laborum eligendi fugiat?
+            Impedit temporibus maxime corporis necessitatibus eum ullam fuga, aperiam itaque assumenda enim magni ipsam neque nam fugiat pariatur id sint consequatur ad eaque. Rem, adipisci. Fugit deserunt ea porro sit!
+            Neque deleniti dolorum temporibus atque exercitationem error debitis facilis earum minus. Odio soluta aperiam alias facilis dolorum. Ex laudantium explicabo assumenda modi. Iusto, iste fugiat. Voluptatibus illum qui minus blanditiis!</p>
+            <figcaption class="blockquote-footer">
+                somebody
+            </figcaption>
+            <div class="d-grid gap-2">
+                <button class="btn btn-danger w-50">btn</button>
+                <button class="btn btn-info">btn</button>
+            </div>
+            <div class ="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-warning">btn</button>
+                <button class="btn btn-secondary">btn</button>
+            </div>
+            <div class="btn-group m-3" role="group" aria-label="Basic example">
+                <button class="btn btn-success">one</button>
+                <button class="btn btn-success">two</button>
+                <button class="btn btn-success">three</button>
+            </div>
+            <div class="text-center">
+                <div class="row mx-5 mb-2 mt-2">
                     <div class="col-lg-3 col-sm-6 bg-primary">
                         column
                     </div>
@@ -89,8 +93,8 @@
                     <div class="col-lg-3 bg-warning col-sm-6">col</div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6"><img class="img-fluid"src="https://media.istockphoto.com/id/928882610/photo/group-of-wild-geese-in-sunset.jpg?s=1024x1024&w=is&k=20&c=6dLFZOke3RudDxMMZ3S4KO2JdE4kXDCsyIsrlFj_K7E=" alt="bird"></div>
-                    <div class="col-lg-6"><img class="img-fluid"src="https://media.istockphoto.com/id/1258120232/photo/greater-flamingos-are-famous-pink-birds-can-be-found-in-warm-watery-regions-on-many-continents.jpg?s=1024x1024&w=is&k=20&c=DsoHMVr5lgCdc7Ilga_E94_PlDLPE-WSofXxUchpOSE=" alt="bird2"></div>
+                    <div class="col-lg-6 my-3 p-0 border border-primary"><img class="img-fluid"src="https://media.istockphoto.com/id/928882610/photo/group-of-wild-geese-in-sunset.jpg?s=1024x1024&w=is&k=20&c=6dLFZOke3RudDxMMZ3S4KO2JdE4kXDCsyIsrlFj_K7E=" alt="bird"></div>
+                    <div class="col-lg-6 my-3 p-0 border border-primary"><img class="img-fluid"src="https://media.istockphoto.com/id/1258120232/photo/greater-flamingos-are-famous-pink-birds-can-be-found-in-warm-watery-regions-on-many-continents.jpg?s=1024x1024&w=is&k=20&c=DsoHMVr5lgCdc7Ilga_E94_PlDLPE-WSofXxUchpOSE=" alt="bird2"></div>
                 </div>
             </div>
             <div class="d-flex justify-content-around">
@@ -122,9 +126,90 @@
                 </div>
                 <input type="submit" name="" id="" class="btn btn-primary mt-3 ">
             </form>
+            <div class="d-flex">
+                <div class="card col-6">
+                    <img src="https://images.unsplash.com/photo-1701220293337-c1585aab8372?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card col-6">
+                    <img src="https://images.unsplash.com/photo-1701314157751-8e737ecd42e7?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1682687982134-2ac563b2228b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://plus.unsplash.com/premium_photo-1698529231257-dcadc22b479d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1701434389583-4d8c5db9c9b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        
         <script src="my-blog.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/4c608dcede.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> -->
     </body>
 </html>
